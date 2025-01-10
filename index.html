@@ -3,78 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>EventLitez - Event Listing</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <img src="IMG_20220413_112833_344.jpg" alt="Your Image" class="profile-img">
-            <h1>Devendra Pawar</h1>
-            <p>Front-End Developer | Web Designer | Problem Solver</p>
-        </div>
+        <h1>Welcome to EventLitez</h1>
+        <p>Your go-to place to create and manage events</p>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Hi, I’m Devendra Pawar, a passionate web developer. I specialize in creating responsive and accessible websites. With a strong foundation in HTML, CSS, and JavaScript, I strive to build beautiful, functional web applications.
-            </p>
-        </div>
+    <section id="event-form">
+        <h2>Create an Event</h2>
+        <form id="create-event-form">
+            <label for="event-name">Event Name:</label>
+            <input type="text" id="event-name" required><br><br>
+
+            <label for="event-date">Date:</label>
+            <input type="date" id="event-date" required><br><br>
+
+            <label for="event-time">Time:</label>
+            <input type="time" id="event-time" required><br><br>
+
+            <label for="event-location">Location:</label>
+            <input type="text" id="event-location" required><br><br>
+
+            <button type="submit">Create Event</button>
+        </form>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Information</h2>
-            <ul>
-                <li>Email: <a href="mailto:youremail@example.com">devendra.pawar1722.com</a></li>
-                <li>Phone: +917821812678</li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">https://www.linkedin.com/in/yourprofile</a></li>
-                
-            </ul>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Responsive Web Design</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Doctor appointment system</h3>
-                <p>The web-based Doctor Appointment system project is an attempt to simulate the basic concepts of doctor management system. A Doctor Management 
-                    System is a software application designed to assist healthcare providers in managing medical practice efficiently. Helps doctors, clinics, and hospitals to 
-                    automate daily operations and streamline workflow by digitizing patient records and appointments.</p>
-                <a href="#">View Project</a>
-           
-        </div>
-    </section>
-
-    <section id="resume">
-        <div class="container">
-            <h2>Resume</h2>
-            <p>You can download my resume by clicking the button below:</p>
-            <a href="NodeFlair_Resume_2024-12-30_16_20_45.pdf" class="btn" download>Download Resume</a>
-        </div>
+    <section id="event-list">
+        <h2>Upcoming Events</h2>
+        <ul id="events-container"></ul>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Devendra. </p>
-        </div>
+        <p>&copy; 2025 EventLitez..</p>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
